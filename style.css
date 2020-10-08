@@ -1,3 +1,36 @@
+
+
+/*css modifié*/
+
+
+.citation{
+    font-style: italic;
+    text-align: center;
+}
+
+p {
+    font-size: 14px;
+}
+
+.titleA{
+    text-align:center;
+}
+
+.titreag{
+    text-align: center;
+}
+.ptitre{
+     font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -20,7 +53,7 @@ a:hover {
 
 #page-loading-blocs-notifaction {
     position: fixed;
-    top: 0;
+    top: 0;                      /*c quoi ca?*/
     bottom: 0;
     width: 100%;
     z-index: 100000;
@@ -30,8 +63,8 @@ a:hover {
 .bloc {
     width: 100%;
     clear: both;
-    background: 50% 50% no-repeat;
     padding: 0 50px;
+    background: 50% 50% no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -58,7 +91,7 @@ a:hover {
 
 .bg-center,
 .bg-l-edge,
-.bg-r-edge,
+.bg-r-edge,    /* MODIF ICI, ?*/
 .bg-t-edge,
 .bg-b-edge,
 .bg-tl-edge,
@@ -92,7 +125,7 @@ a:hover {
 
 .texture-paper::before {
     background: url("img/texture-paper.png");
-    background-size: 280px 280px;
+    background-size: 280px 280px;                         /*A MODIFIER*/
 }
 
 .b-parallax {
@@ -292,7 +325,7 @@ a:hover {
     z-index: 1;
 }
 
-.navbar-brand {
+.navbar-brand {   /*  MODIF ICI POUR LIMAGE DU LOGO LA CHOUETTE AGENCE  IMG 386/72 POUR 214/40 */
     height: auto;
     padding: 3px 15px;
     font-size: 25px;
@@ -308,7 +341,7 @@ a:hover {
 }
 
 .navbar-brand img[src$=svg] {
-    min-width: 100px;
+    min-width: 100px;    /* JUSQUE LA*/
 }
 
 .nav-center .navbar-brand img {
@@ -676,9 +709,9 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 11px;
-}
+/*p {
+    font-size: 11px;                     /*ici modif p*/
+}*/
 
 .tight-width-whitespace {
     max-width: 600px;
@@ -739,6 +772,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.grey{
+    color:#424242;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -775,16 +812,19 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color:  #F3976C!important;   /**/
+}
+.tc-grey{
+    color: #424242;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #424242!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #EF6F34!important;
     color: #FFFFFF!important;
 }
 
@@ -818,7 +858,7 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.jpg");/* A MODIF*/
 }
 
 .bg-presentation {
@@ -846,7 +886,7 @@ h4 {
     .nav-center.navbar .nav {
         max-width: 100%
     }
-}
+}                                                          /*modif a  1050 plutot que 1024*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
@@ -856,7 +896,7 @@ h4 {
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
-        background-attachment: scroll;
+        background-attachment: scroll; /*ici le backg ne scroll plus */
     }
 }
 
