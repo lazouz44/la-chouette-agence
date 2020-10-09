@@ -23,13 +23,45 @@ p {
      font-size: 25px;
 }
 
+h4 {
+    color: #333333!important;                            /*modif ici du h4 avec rajout tt fw fs test*/
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+.btn,
+a {
+    font-family: "helvetica";
+    font-weight: 400;                                                     /*couleur enlevé ici pour contraste test*/
+   /* color: #575757!important;*/
+}
+label{
+    color: #575757;     /*rajout label ici*/
+}
+
+.grey{
+    color:#424242;
+}
+
+.ltc-atomic-tangerine:hover {
+    color: #c27956!important;/*orange pétant*/
+}
+
+.tc-grey{
+    color: #424242;
+}
 
 
-
-
-
-
-
+/*les modifications apportées*/
 
 body {
     margin: 0;
