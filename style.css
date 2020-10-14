@@ -3,6 +3,7 @@
 /*css modifié*/
 
 
+
 .citation{
     font-style: italic;
     text-align: center;
@@ -516,6 +517,7 @@ a:hover {
         float: none;
         margin: 10px auto 0;
     }
+    
 }
 
 .nav > li > .dropdown a {
@@ -1068,7 +1070,7 @@ h1 {
 
     .bloc-xxl,
     .bloc-xl,
-    .bloc-lg {
+    /*.bloc-lg*/ {
         padding: 40px 0;
     }
 
