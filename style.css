@@ -22,7 +22,7 @@ p {
 }
 
 .ptitre{
-     font-size: 23px;
+     font-size: 25px;
 }
 
 
@@ -49,12 +49,15 @@ a {
     font-weight: 400;                                                     /*couleur enlevé ici pour contraste test*/
    /* color: #575757!important;*/
 }
+
 label{
     color: #575757;     /*rajout label ici*/
 }
+
 .btn{
     color: #575757;
 }
+
 .grey{
     color:#424242;
 }
@@ -67,7 +70,47 @@ label{
     color: #424242;
 }
 
+.portfolio-thumb {
+    margin-bottom: 24px;
+    margin-top: 24px;
+    display: inline-block;
+}
 
+.lightbox-caption {
+   /* padding-top: 20px;*/
+    color: #FFF;
+    background: rgba(0, 0, 0, .5);
+   /* position: absolute;*/
+    /*left: 15px;
+    right: 15px;*/
+   /* bottom: 2px;*/
+    text-align: center;
+    
+}
+
+#lightbox-image{
+    /*vertical-align: center;*/
+}
+
+@media (max-width: 767px) {
+    .page-container {
+        overflow-x: hidden;
+        position: relative;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    .citation,
+    .titleA,
+    #disqus_thread {
+        padding-left: 10px!important;
+        padding-right: 10px!important;
+    }
+}
 /*les modifications apportées*/
 
 body {
@@ -648,15 +691,7 @@ a[data-lightbox]:hover img {
     margin: 0 auto;
 }
 
-.lightbox-caption {
-    padding: 20px;
-    color: #FFF;
-    background: rgba(0, 0, 0, .5);
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 5px;
-}
+
 
 .close-lightbox {
     color: #FFF;
@@ -702,7 +737,7 @@ a[data-lightbox]:hover img {
 }
 
 .snapshot-lb .modal-body {
-    padding-bottom: 45px;
+   /* padding-bottom: 45px;*/
 }
 
 .snapshot-lb .lightbox-caption {
@@ -795,14 +830,10 @@ h1 {
 }
 
 
-
-.portfolio-thumb {
-    margin-bottom: 24px;
-}
-
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+
 }
 
 .avatar {
@@ -946,51 +977,42 @@ h1 {
     }
 }
 
-@media (max-width: 767px) {
-    .page-container {
-        overflow-x: hidden;
-        position: relative;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
-    }
+
     .b-parallax {
         background-attachment: scroll;
     }
-    .navbar .nav {
+
+   /* .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
-    }
+    }*/
+
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
     }
-    .site-navigation {
+
+    /*.site-navigation {
         position: inherit;
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
-    }
-    .nav > li {
+    }*/
+
+    /*.nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         background: rgba(0, 0, 0, .05);
         text-align: left;
         padding-left: 15px;
         width: 100%;
-    }
+    }*/
+
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
     }
+
     .dropdown .dropdown a .caret {
         float: none;
         margin: 5px 0 0 10px!important;
@@ -999,51 +1021,63 @@ h1 {
         border-right-color: transparent;
         border-left-color: transparent;
     }
+
     #hero-bloc .navbar .nav {
         background: rgba(0, 0, 0, .8);
     }
+
     #hero-bloc .navbar .nav a {
         color: rgba(255, 255, 255, .6);
     }
+
     .hero {
         padding: 50px 0;
     }
+
     .hero-nav {
         left: -1px;
         right: -1px;
     }
+
     .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
     }
+
     .navbar-brand img {
         max-height: 40px;
         width: auto;
     }
+
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
     }
+
     .nav-invert .navbar-toggle {
         float: left;
         margin-left: 10px;
     }
+
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
+
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
         padding: 40px 0;
     }
+
     .bloc-sm,
     .bloc-md {
         padding-left: 0;
         padding-right: 0;
     }
+    
     .bloc-sm{                               /*test modif respons*/
          padding-bottom: 70px;
     }
